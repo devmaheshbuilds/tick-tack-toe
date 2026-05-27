@@ -12,7 +12,7 @@ const resetgame=()=>{
     count=0;
     enablebuttons();
     msgcontainer.classList.add("hide");
-    box.classList.remove("clicked");
+    
 }
 
 //let win=["","","","","","","","",""]; AL=( alternate logic): to conclude draw and winner 
@@ -72,6 +72,7 @@ const enablebuttons=()=>{
     for(let boxes of box){
         boxes.disabled=false;
         boxes.innerText="";
+        boxes.classList.remove("clicked");
     }
 };
 
